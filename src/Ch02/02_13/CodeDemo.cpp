@@ -9,6 +9,9 @@ int add_int(float a, double b, long double c){
     int result = 0;
 
     // Write your code here
+    result = result + static_cast<int>(a);
+    result = result + static_cast<int>(b);
+    result = result + static_cast<int>(c);
     
     return result;
 }
