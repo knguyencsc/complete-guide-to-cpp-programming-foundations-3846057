@@ -10,14 +10,14 @@
 class Inventory{
 public:
     // Default Constructor
-    Inventory(){
+    Inventory(): capacity(10){
         capacity = 10;
         items = new std::vector<std::string>();
     }
 
     // Overloaded Constructor
-    Inventory(int capacity){
-        this->capacity = capacity;
+    Inventory(int capacity_i): capacity(capacity_i){
+        //this->capacity = capacity;
         items = new std::vector<std::string>();
     }
 
